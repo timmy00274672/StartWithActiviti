@@ -1,3 +1,5 @@
+package chapter1;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 
@@ -26,7 +28,7 @@ public class BookOrderTest {
 		IdentityService identityService = processEngine.getIdentityService();
 		TaskService taskService = processEngine.getTaskService(); 
 		repositoryService.createDeployment()
-			.addClasspathResource("bookorder.bpmn20.xml")
+			.addClasspathResource("chapter1/bookorder.bpmn20.xml")
 			.deploy();
 		
 		// remove tasks already present
